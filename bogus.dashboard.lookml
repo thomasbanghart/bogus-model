@@ -59,7 +59,7 @@
     row: 0
     col: 16
     width: 6
-    height: 7
+    height: 6
   - title: Campaign
     name: Campaign
     model: bogus
