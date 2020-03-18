@@ -1,10 +1,10 @@
-- dashboard: bogus_testing
-  title: Bogus Testing
+- dashboard: bogus_research
+  title: bogus Research
   layout: newspaper
   elements:
   - title: Subscription Events
     name: Subscription Events
-    model: bogus
+    model: braze-bogus
     explore: campaign
     type: looker_column
     fields: [subscription_event.campaign_id, subscription_event.count]
@@ -62,7 +62,7 @@
     height: 6
   - title: Campaign
     name: Campaign
-    model: bogus
+    model: braze-bogus
     explore: campaign
     type: looker_column
     fields: [campaign.id, campaign.count]
@@ -118,7 +118,7 @@
     height: 6
   - title: Join
     name: Join
-    model: bogus
+    model: braze-bogus
     explore: campaign
     type: looker_column
     fields: [campaign.id, subscription_event.campaign_id, campaign.count, subscription_event.count]
@@ -174,7 +174,7 @@
     height: 6
   - title: Records
     name: Records
-    model: bogus
+    model: braze-bogus
     explore: campaign
     type: single_value
     fields: [campaign.count]
@@ -236,7 +236,7 @@
     height: 6
   - title: Records
     name: Records (2)
-    model: bogus
+    model: braze-bogus
     explore: campaign
     type: single_value
     fields: [subscription_event.count]
