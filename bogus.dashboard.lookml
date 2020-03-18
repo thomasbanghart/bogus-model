@@ -1,5 +1,5 @@
-- dashboard: bogus_model
-  title: Bogus Model
+- dashboard: bogus_testing
+  title: Bogus Testing
   layout: newspaper
   elements:
   - title: Subscription Events
