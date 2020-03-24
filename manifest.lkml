@@ -11,3 +11,8 @@ visualization: {
   label: "Schema Viewer"
   file: "schemaviewer.js"
 }
+visualization: {
+  id: "bogus-controller"
+  label: "Bogus Controller"
+  file: "boguscontroller.js"
+}
