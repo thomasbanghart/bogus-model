@@ -20,6 +20,7 @@ view: bogus_dashboards {
     sql: ${TABLE}.image  ;;
   }
 
+
   measure: count {
     type: count
     drill_fields: []
