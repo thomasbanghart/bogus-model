@@ -76,7 +76,7 @@ looker.plugins.visualizations.add({
       var packag = {}
       packag['filename'] = fn
       packag['dataset'] = ds
-      packae['mode'] = dp
+      packag['mode'] = dp
       modelb = mb === "" ? {} : JSON.parse(mb)
       if (rm) {
         modelb["."] = parseInt(n)
@@ -87,6 +87,7 @@ looker.plugins.visualizations.add({
         type: "GET",
         url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/makedata",
         data: packag,
+        contentType: "application/json",
         success: console.log("Good")
       });
     });
