@@ -11,7 +11,7 @@ view: recipes {
       icon_url: "https://cdn.shopify.com/s/files/1/1061/1924/products/100_Emoji_large.png?v=1571606035"
       url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/modifyrecipe"
       form_param: {
-        name: "update"
+        name: "updated"
         type: textarea
         label: "Recipe"
         required: yes
