@@ -16,7 +16,7 @@ view: bogus_dashboards {
 
   dimension: image {
     type: string
-    html: <img src="https://storage.cloud.google.com/brick-layer-testing/bogus_test/{{value}}"/> ;;
+    html: <img height="400px" src="https://storage.cloud.google.com/brick-layer-testing/bogus_test/{{value}}"/> ;;
     sql: ${TABLE}.image  ;;
   }
 
