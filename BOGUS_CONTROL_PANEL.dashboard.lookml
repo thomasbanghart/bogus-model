@@ -1,5 +1,5 @@
-- dashboard: bogus_control_panel_tj
-  title: BOGUS CONTROL PANEL (TJ)
+- dashboard: bogus_control_panel
+  title: BOGUS CONTROL PANEL
   layout: newspaper
   elements:
   - title: Blocks (Click to Make Data)
