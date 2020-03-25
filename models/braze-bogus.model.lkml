@@ -16,3 +16,5 @@ explore: campaign {
     type: full_outer
   }
 }
+
+explore: blocks {}
