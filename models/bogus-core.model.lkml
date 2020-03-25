@@ -2,7 +2,7 @@ connection: "brick-layer"
 
 # include all the views
 include: "/views/**/*.view"
-# include: "/*.dashboard.lookml"
+include: "/*.dashboard.lookml"
 
 explore: blocks {
   join: recipes {
