@@ -5,15 +5,17 @@ view: blocks {
 
   dimension: id {
     primary_key: yes
+    hidden: yes
     type: number
     sql: ${TABLE}.id ;;
   }
 
-  dimension: name {
+  dimension: block_name {
     type: string
     sql: ${TABLE}.name ;;
     action: {
       label: "Make Data"
+      icon_url: "https://cdn.shopify.com/s/files/1/1061/1924/products/100_Emoji_large.png?v=1571606035"
       url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/makedata"
       form_param: {
         name: "filename"
@@ -57,8 +59,8 @@ view: blocks {
   }
 
 
-  measure: count {
+  measure: block_count {
     type: count
-    drill_fields: [id, name]
+    drill_fields: [id, block_name]
   }
 }
