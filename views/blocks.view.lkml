@@ -40,7 +40,7 @@ view: blocks {
 }"
       }
       form_param: {
-        name: "disp"
+        name: "mode"
         type: select
         label: "Append or Drop&Replace"
         required: yes
