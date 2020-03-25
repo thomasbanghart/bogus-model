@@ -16,7 +16,7 @@ view: bogus_dashboards {
 
   dimension: png {
     type: string
-    html: <img src="data:image/png;base64,{{value}}"/> ;;
+    html: <img height="100px" src="data:image/png;base64,{{value}}"/> ;;
     sql: ${TABLE}.png  ;;
   }
 

@@ -11,6 +11,7 @@ view: blocks {
   }
 
   dimension: block_name {
+    label: "Block Name"
     type: string
     sql: ${TABLE}.name ;;
     action: {
@@ -47,6 +48,25 @@ view: blocks {
           label: "Drop&Replace"
           name: "w"
         }
+      }
+    }
+  }
+
+  dimension: block_name2 {
+    label: "Block Name"
+    group_label: "ERD"
+    type: string
+    sql: ${TABLE}.name ;;
+    action: {
+      label: "Make Recipes"
+      icon_url: "https://cdn.shopify.com/s/files/1/1061/1924/products/100_Emoji_large.png?v=1571606035"
+      url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/createbogus"
+      form_param: {
+        name: "filename"
+        type: string
+        label: "ERD Filename (.tsv)"
+        required: yes
+        default: "{{ value }}"
       }
     }
   }
