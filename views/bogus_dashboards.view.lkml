@@ -14,10 +14,10 @@ view: bogus_dashboards {
     sql: ${TABLE}.dataset ;;
   }
 
-  dimension: png {
+  dimension: image {
     type: string
-    html: <img src="data:image/png;base64,{{value}}"/> ;;
-    sql: ${TABLE}.png  ;;
+    html: <img src="https://storage.cloud.google.com/brick-layer-testing/bogus_test/{{value}}"/> ;;
+    sql: ${TABLE}.image  ;;
   }
 
   measure: count {
