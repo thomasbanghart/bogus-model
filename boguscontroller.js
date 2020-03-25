@@ -84,7 +84,7 @@ looker.plugins.visualizations.add({
       packag['modelbogus'] = modelb
       console.log(packag)
       $.ajax({
-        type: "GET",
+        type: "POST",
         url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/makedata",
         data: packag,
         contentType: "application/json",
