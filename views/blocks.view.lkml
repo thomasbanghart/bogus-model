@@ -60,7 +60,7 @@ view: blocks {
     action: {
       label: "Make Recipes"
       icon_url: "https://cdn.shopify.com/s/files/1/1061/1924/products/100_Emoji_large.png?v=1571606035"
-      url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/createbogus"
+      url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/createbogus-1"
       form_param: {
         name: "filename"
         type: string
