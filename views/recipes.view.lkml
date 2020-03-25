@@ -17,10 +17,6 @@ view: recipes {
         required: yes
         default: "{{ value }}"
       }
-      param: {
-        name: "previous"
-        value: "{{ value }}"
-      }
     }
   }
 
