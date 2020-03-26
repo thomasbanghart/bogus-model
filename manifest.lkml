@@ -11,3 +11,8 @@ visualization: {
   file: "boguscontroller.js"
   dependencies: ["https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"]
 }
+visualization: {
+  id: "bogus-erd-viewer"
+  label: "ERD Viewer"
+  file: "erdviewer.js"
+}
