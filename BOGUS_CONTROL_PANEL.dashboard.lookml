@@ -134,13 +134,17 @@
     col: 0
     width: 18
     height: 14
-  - title: Variant Comparisons
-    name: Variant Comparisons
+  - title: Variant Comparison
+    name: Variant Comparison
     model: bogus-core
     explore: bogus_dashboards
     type: table
-    fields: [bogus_dashboards.dashboard_id, bogus_dashboards.dataset, bogus_dashboards.image]
-    sorts: [bogus_dashboards.dashboard_id desc, bogus_dashboards.dataset desc]
+    fields: [bogus_dashboards.dataset, bogus_dashboards.image, bogus_dashboards.image_pivot,
+      bogus_dashboards.dashboard_id, bogus_dashboards.render_task_run_time]
+    pivots: [bogus_dashboards.dataset, bogus_dashboards.image, bogus_dashboards.dashboard_id,
+      bogus_dashboards.render_task_run_time]
+    sorts: [bogus_dashboards.image, bogus_dashboards.dataset, bogus_dashboards.dashboard_id,
+      bogus_dashboards.render_task_run_time]
     limit: 500
     query_timezone: America/Los_Angeles
     show_view_names: false
@@ -153,32 +157,48 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    show_sql_query_menu_options: false
-    column_order: {}
-    show_totals: true
-    show_row_totals: true
-    transpose: true
+    series_labels:
+      bogus_dashboards.dashboard_id: ID
+      bogus_dashboards.render_task_run_time: Run TIme
+      bogus_dashboards.image_pivot: !binary |-
+        CAg=
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: true
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    legend_position: center
+    point_style: none
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    defaults_version: 1
+    series_types: {}
+    transpose: false
     truncate_text: true
     size_to_fit: true
     header_text_alignment: left
-    header_font_size: '12'
-    rows_font_size: '12'
-    defaults_version: 1
-    series_types: {}
-    hidden_fields: []
-    hidden_points_if_no: []
-    series_labels: {}
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    listen: {}
+    header_font_size: 12
+    rows_font_size: 12
     row: 14
     col: 0
     width: 24
-    height: 88
+    height: 13
   filters:
   - name: Block
     title: Block

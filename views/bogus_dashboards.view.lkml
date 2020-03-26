@@ -16,8 +16,23 @@ view: bogus_dashboards {
 
   dimension: image {
     type: string
-    html: <img height="400px" src="https://storage.cloud.google.com/brick-layer-testing/bogus_test/{{value}}"/> ;;
     sql: ${TABLE}.image  ;;
+  }
+
+  measure: image_pivot {
+    html: <img height="400px" src="https://storage.cloud.google.com/brick-layer-testing/bogus_test/{{ image._value}}"/> ;;
+    type: sum
+    sql: 1 ;;
+  }
+
+  dimension: run_time {
+    hidden: yes
+    type: number
+    sql:  ${TABLE}.run_time ;;
+  }
+
+  dimension: render_task_run_time {
+    sql: CONCAT(${run_time}, ' ', "sec") ;;
   }
 
 
