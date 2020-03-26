@@ -20,6 +20,23 @@ view: recipes {
     }
   }
 
+  dimension: table_name {
+    type: string
+    sql: JSON_EXTRACT_SCALAR(${recipes.field_recipe}, '$.table_name') ;;
+  }
+  dimension: field_name {
+    type: string
+    sql: JSON_EXTRACT_SCALAR(${recipes.field_recipe}, '$.field_name') ;;
+  }
+  dimension: dist {
+    type: string
+    sql: JSON_EXTRACT_SCALAR(${recipes.field_recipe}, '$.dist') ;;
+  }
+  dimension: fk_type {
+    type: string
+    sql: JSON_EXTRACT_SCALAR(${recipes.field_recipe}, '$.fk_type') ;;
+  }
+
   measure: recipe_count {
     type: count
     drill_fields: []
