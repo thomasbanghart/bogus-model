@@ -51,7 +51,7 @@
     model: bogus-core
     explore: blocks
     type: looker_grid
-    fields: [blocks.block_name]
+    fields: [blocks.block_name3]
     limit: 500
     show_view_names: false
     show_row_numbers: true

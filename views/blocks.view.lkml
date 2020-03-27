@@ -71,6 +71,44 @@ view: blocks {
     }
   }
 
+  dimension: block_name3 {
+    label: "Block Name (Dashboards)"
+    type: string
+    sql: ${TABLE}.name ;;
+    action: {
+      label: "Make Dashboards"
+      icon_url: "https://cdn.shopify.com/s/files/1/1061/1924/products/100_Emoji_large.png?v=1571606035"
+      url: "https://us-central1-spencer-white-tckt87992.cloudfunctions.net/makepdfs"
+      form_param: {
+        label: "Dataset"
+        name: "dataset"
+        type: string
+        required: yes
+      }
+      form_param: {
+        label: "Variant Case"
+        name: "modelbogus"
+        type: string
+        required: yes
+        default: "{case: many_to_one | one_to_many }"
+      }
+      form_param: {
+        label: "Add or replace dashboards?"
+        name: "reset_db"
+        type: select
+        required: yes
+        option: {
+          label: "Add"
+          name: "add"
+        }
+        option: {
+          label: "Replace"
+          name: "replace"
+        }
+      }
+    }
+  }
+
 
   measure: block_count {
     type: count
