@@ -16,3 +16,8 @@ visualization: {
   label: "ERD Viewer"
   file: "erdviewer.js"
 }
+visualization: {
+  id: "gauge-next-radial"
+  label: "Radial Gauge Dev"
+  file: "gauge.js"
+}
