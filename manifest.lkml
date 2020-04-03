@@ -17,7 +17,7 @@ visualization: {
   file: "erdviewer.js"
 }
 visualization: {
-  id: "gauge-next-radial"
+  id: "gauge-next-marketplace-dev"
   label: "Custom Gauge"
   file: "gauge.js"
 }
