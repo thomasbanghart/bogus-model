@@ -18,6 +18,6 @@ visualization: {
 }
 visualization: {
   id: "gauge-next-radial"
-  label: "Gauge-Next (Custom Gauge)"
+  label: "Custom Gauge"
   file: "gauge.js"
 }
