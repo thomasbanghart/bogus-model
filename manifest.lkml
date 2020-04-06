@@ -16,8 +16,15 @@ visualization: {
   label: "ERD Viewer"
   file: "erdviewer.js"
 }
+
+
 visualization: {
-  id: "gauge-next-marketplace-dev"
-  label: "Custom Gauge"
-  file: "gauge.js"
+  id: "radialgauge-next-marketplace-dev"
+  label: "Radial Gauge"
+  file: "radialgauge.js"
+}
+visualization: {
+  id: "bargauge-next-marketplace-dev"
+  label: "Bar Gauge"
+  file: "bargauge.js"
 }
