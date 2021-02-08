@@ -7,6 +7,7 @@ include: "/*.dashboard.lookml"
 explore: blocks {
   join: recipes {
     view_label: "Blocks"
+    type: full_outer
     sql_on: ${blocks.block_name} = JSON_EXTRACT_SCALAR(${recipes.field_recipe}, '$.block') ;;
     relationship: one_to_many
   }
