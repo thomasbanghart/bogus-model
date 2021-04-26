@@ -11,3 +11,12 @@ explore: blocks {
     relationship: one_to_many
   }
 }
+
+explore: joins {
+  from:  blocks
+  join: recipes {
+    view_label: "Blocks"
+    sql_on: ${joins.block_name} = JSON_EXTRACT_SCALAR(${recipes.field_recipe}, '$.block') ;;
+    relationship: one_to_many
+  }
+}
