@@ -52,6 +52,11 @@ view: blocks {
     }
   }
 
+  dimension: test_dimension {
+    type: string
+    sql: "test" ;;
+  }
+
   dimension: block_name2 {
     label: "Block Name"
     group_label: "ERD"
